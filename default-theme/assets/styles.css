@@ -1,0 +1,67 @@
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.125em;
+}
+
+.logo {
+  float: right;
+  width: 200px;
+}
+
+.issue {
+    page-break-inside: avoid;
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.issue h2 {
+    margin: 0;
+}
+
+.issue h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.issue p {
+    margin: 0 0 1em 0;
+}
+
+.issue .heading {
+  background-color: #cccccc;
+  border-bottom: 1px solid black;
+}
+
+.issue .heading,
+.issue .content {
+    padding: 1em;
+}
+
+.issue .heading .fields {
+    margin: 1em 0 0 0;
+}
+
+.issue .heading .fields > * {
+    display: inline-block;
+    width: 33.33333%;
+}
+
+.issue .heading .fields h3 span {
+    font-weight: 400;
+}
+
+.issue .content {
+  min-height: 10em;
+}

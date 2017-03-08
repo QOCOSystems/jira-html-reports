@@ -1,0 +1,21 @@
+{
+  "name": "jira-html-reports",
+  "version": "0.1.0",
+  "description": "A small tool for generating HTML reports from JIRA XML exports",
+  "main": "index.js",
+  "author": "Ilari Neitola <ilari@qoco.fi>",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^4.0.2",
+    "html-entities": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.17.1",
+    "ncp": "^2.0.0",
+    "pug": "^2.0.0-beta11",
+    "xml2js": "^0.4.17"
+  },
+  "bin": {
+    "jira-html-reports": "./index.js"
+  },
+  "repository": "QOCOSystems/jira-html-reports"
+}

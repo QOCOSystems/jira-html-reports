@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    title= projectName
+    
+    link(href='https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet')
+
+    style
+      include assets/styles.css
+
+  body
+    img(src='assets/logo.png' class='logo')
+    h1= projectName
+    h2 Jira User Stories Report
+    p= "Generated at " + printedAt
+    
+    each i in issues
+      div(class='issue')
+        div(class='heading')
+          h2= i.issueId + ": " + i.title
+          div(class='fields')
+            h3 Status: 
+              span= i.status
+            h3 Priority: 
+              span= i.priority
+            h3 Type: 
+              span= i.type
+        div(class='content')
+          p!= i.description
